@@ -1,0 +1,39 @@
+.social-network {
+  display: inline-flex;
+}
+
+.social-network__item {
+  &:not(:first-child) {
+    margin-left: 10px;
+  }
+}
+
+.social-network__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: $transition-bg-color;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+  &--change {
+    background: $accent-link-footer;
+    transition: $transition-bg-color;
+  }
+}
+
+.social-network__icon {
+  fill: $icons-color;
+  transition: $transition-fill;
+  .social-network__link:hover &,
+  .social-network__link:focus & {
+    fill: $primary-white-color;
+  }
+  &--change {
+    fill: $primary-white-color;
+  }
+}

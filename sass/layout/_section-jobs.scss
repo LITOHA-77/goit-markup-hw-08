@@ -1,0 +1,40 @@
+.section-jobs {
+  padding-top: 0;
+}
+
+.section-jobs__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  margin-left: calc(-1 * #{$section-jobs-list-set-gap});
+}
+
+.section-jobs__item {
+  flex-basis: calc(
+    100% / #{$section-jobs-list-set} - #{$section-jobs-list-set-gap}
+  );
+  margin-left: #{$section-jobs-list-set-gap};
+}
+
+.section-jobs__item--foto-thumb {
+  display: inline-block;
+  position: relative;
+}
+
+.section-jobs__text {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  min-height: 70px;
+  bottom: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $primary-white-color;
+  background: $bg-jobs-text;
+}

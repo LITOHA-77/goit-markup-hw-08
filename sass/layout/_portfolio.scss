@@ -1,0 +1,100 @@
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.filter__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.filter-cards {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * #{$section-filter-link-gap});
+  margin-top: calc(-1 * #{$section-filter-link-gap});
+}
+
+.filter-cards__item {
+  flex-basis: calc(
+    100% / #{$section-filter-link-set} - #{$section-filter-link-gap}
+  );
+  margin-left: #{$section-filter-link-gap};
+  margin-top: #{$section-filter-link-gap};
+}
+
+.filter-box__title {
+  color: $text-title-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
+
+.filter-box__text {
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+.filter-cards__link p {
+  margin-bottom: 0;
+}
+
+.filter-cards__link {
+  display: block;
+  transition: $transition-shadow;
+  &:hover,
+  &:focus {
+    box-shadow: $filter-cards-shadow;
+  }
+}
+
+.filter-box {
+  padding: 20px 24px;
+  border: 1px solid $filter-box;
+  border-top: none;
+}
+
+.animation-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.animation-box__thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $animation-box;
+  transform: translateY(100%);
+  transition: $transition-transform;
+  .filter-cards__link:hover &,
+  .filter-cards__link:focus & {
+    transform: translateY(0);
+  }
+}
+
+.animation-box__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 322px;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  line-height: 1.56;
+  color: $primary-white-color;
+}

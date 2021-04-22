@@ -1,0 +1,57 @@
+$filter-box: #eeeeee;
+$animation-box: rgba(33, 150, 243, 0.9);
+$accent-color: #2196f3;
+$button-hover: #188ce8;
+$text-title-color: #212121;
+$black-color-acc-logo: #000000;
+$text-color: #757575;
+$icons-color: #afb1b8;
+$primary-white-color: #ffffff;
+$dark-bg-color: #2f303a;
+$accent-bg-color: #f5f4fa;
+$hero-bgc: #c4c4c4;
+$accent-link-footer: rgba(255, 255, 255, 0.1);
+$mail-box-color: rgba(255, 255, 255, 0.6);
+$mail-box-border: rgba(255, 255, 255, 0.3);
+$bg-jobs-text: rgba(47, 48, 58, 0.8);
+$form-modal-imput: rgba(117, 117, 117, 0.5);
+$form-modal-imput-border: rgba(33, 33, 33, 0.2);
+$backdrop-bgc: rgba(0, 0, 0, 0.2);
+$modal-close: rgba(0, 0, 0, 0.1);
+$hero-overlay: rgba(47, 48, 58, 0.4);
+$checkbox: 0px 4px 4px rgba(0, 0, 0, 0.25);
+$card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+$filter-cards-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+$filter-button-swdow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+  0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+$modal-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+$button-swadow: rgba(0, 0, 0, 0.15);
+$mail-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+$transition-color: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-fill: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-bg-color: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-shadow: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-bgc-fill-shadow: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-opacity-visibility: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-border: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$transition-bgc-color-shadow: background-color 250ms
+    cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+$description-list-set: 4;
+$description-list-set-gap: 30px;
+$team-list-set: 4;
+$team-list-set-gap: 30px;
+$section-jobs-list-set: 3;
+$section-jobs-list-set-gap: 30px;
+$section-clients-set: 6;
+$section-clients-set-gap: 30px;
+$section-filter-link-set: 3;
+$section-filter-link-gap: 30px;

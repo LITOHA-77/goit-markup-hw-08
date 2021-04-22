@@ -1,0 +1,82 @@
+.button {
+  display: inline-flex;
+  padding: 10px 32px;
+  min-width: 200px;
+  color: $primary-white-color;
+  background-color: $accent-color;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px $button-swadow;
+  border-radius: 4px;
+  transition: $transition-bg-color;
+  &:hover,
+  &:focus {
+    background-color: $button-hover;
+  }
+}
+
+.subscribe--button {
+  align-items: center;
+  text-align: center;
+  padding-left: 29px;
+  padding-right: 28px;
+}
+.subscribe__icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
+.button--send {
+  align-items: center;
+  text-align: center;
+  padding-left: 56px;
+  padding-right: 55px;
+}
+
+.modal__button-close {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $modal-close;
+  background: $primary-white-color;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.modal__icon {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  fill: $black-color-acc-logo;
+  transition: $transition-fill;
+  .modal__button-close:hover &,
+  .modal__button-close:focus & {
+    fill: $accent-color;
+  }
+}
+
+.filter__button {
+  background-color: $accent-bg-color;
+  display: inline-block;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: transparent;
+  cursor: pointer;
+  transition: $transition-bgc-color-shadow;
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+    box-shadow: $filter-button-swdow;
+  }
+}
