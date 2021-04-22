@@ -349,7 +349,12 @@ img {
 }
 @media screen and (min-width: 480px) {
   .team__list {
-    width: 480px;
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__list {
+    width: 738px;
   }
 }
 
