@@ -58,12 +58,14 @@ img {
 }
 
 .container {
+  min-width: 320px;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-
   margin-left: auto;
-  border: 1px solid red;
+  border-left: 1px solid red;
+  border-right: 1px solid red;
+
   @media screen and (min-width: 480px) {
     width: 480px;
   }
@@ -77,10 +79,15 @@ img {
   }
 }
 
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
 .section__title {
   font-weight: 700;

@@ -45,15 +45,26 @@ $transition-bgc-color-shadow: background-color 250ms
     cubic-bezier(0.4, 0, 0.2, 1),
   color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-$description-list-set: 4;
-$description-list-set-gap: 30px;
-$team-list-set: 4;
-$team-list-set-gap: 30px;
-$section-jobs-list-set: 3;
-$section-jobs-list-set-gap: 30px;
-$section-clients-set: 6;
-$section-clients-set-gap: 30px;
+
+$description-list-tablet-set: 2;
+$description-list-desktop-set: 4;
+$description-list-tablet-set-gap: 30px;
+$description-list-desktop-set-gap: 30px;
+
+$team-list-tablet-set: 2;
+$team-list-desktop-set: 4;
+$team-list-tablet-set-gap: 30px;
+$team-list-desktop-set-gap: 30px;
+
+$section-jobs-list-desktop-set: 3;
+$section-jobs-list-desktop-set-gap: 30px;
+
+$section-clients-mobile-set: 2;
+$section-clients-mobile-set-gap: 15px;
+$section-clients-tablet-set: 3;
+$section-clients-tablet-set-gap: 30px;
+$section-clients-desktop-set: 6;
+$section-clients-desktop-set-gap: 30px;
+
 $section-filter-link-set: 3;
 $section-filter-link-gap: 30px;
-$section-mobiel-clients-set: 2;
-$section-mobile-clients-set-gap: 15px;
