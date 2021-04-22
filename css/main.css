@@ -357,6 +357,11 @@ img {
     width: 738px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .team__list {
+    width: 1170px;
+  }
+}
 
 .team__item {
   background-color: #ffffff;
