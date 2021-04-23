@@ -531,7 +531,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 210px;
+  max-width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
