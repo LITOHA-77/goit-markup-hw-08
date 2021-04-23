@@ -6,6 +6,9 @@
   @media screen and (min-width: 768px) {
     margin-left: calc(-1 * #{$section-clients-tablet-set-gap});
   }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: -30px;
+  }
 
   @media screen and (min-width: 1200px) {
     display: inline-flex;
@@ -25,6 +28,9 @@
     );
     margin-left: #{$section-clients-tablet-set-gap};
   }
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 1200px) {
     flex-basis: calc(
@@ -38,7 +44,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 210px;
+  // max-width: 210px;
   height: 90px;
   border: 1px solid $icons-color;
   border-radius: 4px;
@@ -46,6 +52,9 @@
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
+  }
+  @media screen and (max-width: 767px) {
+    max-width: 210px;
   }
   @media screen and (min-width: 768px) {
     width: 225px;

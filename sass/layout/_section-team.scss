@@ -10,6 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: calc(-1 * #{$team-list-tablet-set-gap});
+    margin-bottom: -30px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: calc(-1 * #{$team-list-desktop-set-gap});
@@ -21,11 +22,18 @@
   box-shadow: $card-shadow;
   border-radius: 0px 0px 4px 4px;
 
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     flex-basis: calc(
       100% / #{$team-list-tablet-set} - #{$team-list-tablet-set-gap}
     );
     margin-left: #{$team-list-tablet-set-gap};
+    margin-bottom: 30px;
   }
 
   @media screen and (min-width: 1200px) {
