@@ -47,13 +47,13 @@ $transition-bgc-color-shadow: background-color 250ms
   box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 $description-list-tablet-set: 2;
-$description-list-desktop-set: 4;
 $description-list-tablet-set-gap: 30px;
+$description-list-desktop-set: 4;
 $description-list-desktop-set-gap: 30px;
 
 $team-list-tablet-set: 2;
-$team-list-desktop-set: 4;
 $team-list-tablet-set-gap: 30px;
+$team-list-desktop-set: 4;
 $team-list-desktop-set-gap: 30px;
 
 $section-jobs-list-desktop-set: 3;
@@ -66,5 +66,7 @@ $section-clients-tablet-set-gap: 30px;
 $section-clients-desktop-set: 6;
 $section-clients-desktop-set-gap: 30px;
 
-$section-filter-link-set: 3;
-$section-filter-link-gap: 30px;
+$section-filter-link-tablet-set: 2;
+$section-filter-link-tablet-gap: 30px;
+$section-filter-link-desktop-set: 3;
+$section-filter-link-desktop-gap: 30px;

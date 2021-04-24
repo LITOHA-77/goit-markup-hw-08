@@ -3,98 +3,140 @@
 //   padding-bottom: 94px;
 // }
 
-// .filter {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   margin-bottom: 50px;
-// }
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
 
-// .filter__item {
-//   &:not(:last-child) {
-//     margin-right: 8px;
-//   }
-// }
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 
-// .filter-cards {
-//   padding: 0;
-//   margin: 0;
-//   display: flex;
-//   flex-wrap: wrap;
-//   margin-left: calc(-1 * #{$section-filter-link-gap});
-//   margin-top: calc(-1 * #{$section-filter-link-gap});
-// }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
 
-// .filter-cards__item {
-//   flex-basis: calc(
-//     100% / #{$section-filter-link-set} - #{$section-filter-link-gap}
-//   );
-//   margin-left: #{$section-filter-link-gap};
-//   margin-top: #{$section-filter-link-gap};
-// }
+.filter__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+  @media screen and (max-width: 767px) {
+    &:nth-child(-n + 3) {
+      margin-bottom: 15px;
+    }
+  }
+}
 
-// .filter-box__title {
-//   color: $text-title-color;
-//   font-weight: 700;
-//   font-size: 18px;
-//   line-height: 2;
-//   letter-spacing: 0.06em;
-//   margin-bottom: 4px;
-// }
+.filter-cards {
+  padding: 0;
+  margin: 0;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * #{$section-filter-link-tablet-gap});
+    margin-bottom: -30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: calc(-1 * #{$section-filter-link-desktop-gap});
+  }
+}
 
-// .filter-box__text {
-//   color: $text-color;
-//   font-size: 16px;
-//   line-height: 1.87;
-//   letter-spacing: 0.03em;
-// }
+.filter-cards__item {
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+    }
+  }
 
-// .filter-cards__link p {
-//   margin-bottom: 0;
-// }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(
+      100% / #{$section-filter-link-tablet-set} - #{$section-filter-link-tablet-gap}
+    );
+    margin-left: #{$section-filter-link-tablet-gap};
+    margin-bottom: 30px;
+  }
 
-// .filter-cards__link {
-//   display: block;
-//   transition: $transition-shadow;
-//   &:hover,
-//   &:focus {
-//     box-shadow: $filter-cards-shadow;
-//   }
-// }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(
+      100% / #{$section-filter-link-desktop-set} - #{$section-filter-link-desktop-gap}
+    );
+    margin-left: #{$section-filter-link-desktop-gap};
+  }
+}
+.filter-cards__foto {
+  margin: auto;
+}
 
-// .filter-box {
-//   padding: 20px 24px;
-//   border: 1px solid $filter-box;
-//   border-top: none;
-// }
+.filter-box__title {
+  color: $text-title-color;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+}
 
-// .animation-box {
-//   position: relative;
-//   overflow: hidden;
-// }
+.filter-box__text {
+  color: $text-color;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
 
-// .animation-box__thumb {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background: $animation-box;
-//   transform: translateY(100%);
-//   transition: $transition-transform;
-//   .filter-cards__link:hover &,
-//   .filter-cards__link:focus & {
-//     transform: translateY(0);
-//   }
-// }
+.filter-cards__link p {
+  margin-bottom: 0;
+}
 
-// .animation-box__text {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   width: 322px;
-//   transform: translate(-50%, -50%);
-//   font-size: 18px;
-//   line-height: 1.56;
-//   color: $primary-white-color;
-// }
+.filter-cards__link {
+  display: block;
+  transition: $transition-shadow;
+  &:hover,
+  &:focus {
+    box-shadow: $filter-cards-shadow;
+  }
+}
+
+.filter-box {
+  padding: 20px 24px;
+  border: 1px solid $filter-box;
+  border-top: none;
+  &--size {
+    @media screen and (max-width: 1190px) {
+      padding-bottom: 56px;
+    }
+  }
+}
+
+.animation-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.animation-box__thumb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $animation-box;
+  transform: translateY(100%);
+  transition: $transition-transform;
+  .filter-cards__link:hover &,
+  .filter-cards__link:focus & {
+    transform: translateY(0);
+  }
+}
+
+.animation-box__text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 322px;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  line-height: 1.56;
+  color: $primary-white-color;
+}
