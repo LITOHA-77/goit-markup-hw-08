@@ -1,4 +1,5 @@
 .page-header {
+  min-width: 320px;
   padding-top: 10px;
   padding-bottom: 10px;
   &--border {
@@ -18,9 +19,13 @@
 }
 
 .page-header .container {
-  display: flex;
-  justify-content: flex-end;
+  position: relative;
+  //   display: flex;
+  //   justify-content: space-between;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-end;
+  }
 }
 .page-header__logo--size {
   @media screen and (min-width: 768px) {
@@ -31,9 +36,13 @@
   }
 }
 .page-header__nav {
-  display: inline-flex;
+  display: flex;
   align-items: center;
-  margin-right: auto;
+  justify-content: space-between;
+  //   margin-right: auto;
+
+  @media screen and (min-width: 768px) {
+  }
 }
 
 .site-nav__link {
@@ -67,6 +76,11 @@
 }
 
 .site-nav__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
   @media screen and (min-width: 768px) {
     &:not(:last-child) {
       margin-right: 50px;
@@ -74,6 +88,11 @@
   }
 }
 .auth-nav__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
   @media screen and (min-width: 768px) {
     &:not(:last-child) {
       margin-bottom: 7px;
@@ -87,35 +106,46 @@
   }
 }
 .site-nav {
+  position: absolute;
+  top: 48px;
+  left: 25px;
+  align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 40px;
+  line-height: 1.18;
   letter-spacing: 0.02em;
-  @media screen and (max-width: 449px) {
-    display: none;
-  }
-  @media screen and (min-width: 450px) {
-    display: none;
-  }
+  //   @media screen and (max-width: 449px) {
+  //     display: none;
+  //   }
+  //   @media screen and (min-width: 450px) {
+  //     display: none;
+  //   }
 
   @media screen and (min-width: 768px) {
     display: flex;
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 .auth-nav {
+  position: absolute;
+  bottom: 134px;
+  left: 25px;
+  display: inline-flex;
+  flex-direction: column;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  @media screen and (max-width: 449px) {
-    display: none;
-  }
-  @media screen and (min-width: 450px) {
-    display: none;
-  }
+  //   @media screen and (max-width: 449px) {
+  //     display: none;
+  //   }
+  //   @media screen and (min-width: 450px) {
+  //     display: none;
+  //   }
   @media screen and (min-width: 768px) {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: baseline;
     font-size: 12px;
     line-height: 1.14;
@@ -128,6 +158,9 @@
   }
 }
 .auth-nav__icon {
+  @media screen and (max-width: 449px) {
+    display: none;
+  }
   @media screen and (min-width: 450px) {
     display: none;
   }
@@ -151,9 +184,11 @@
   display: flex;
   align-items: center;
   color: $text-color;
-  transition: $transition-color;
+  transition: $transition-color-size;
   &:hover,
   &:focus {
     color: $accent-color;
+    font-size: 34px;
+    line-height: 1.17;
   }
 }

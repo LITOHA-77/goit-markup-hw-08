@@ -80,3 +80,46 @@
     box-shadow: $filter-button-swdow;
   }
 }
+
+.page-header__button-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.button-menu__icon-open {
+  fill: $black-color-acc-logo;
+  transition: $transition-fill;
+  .page-header__button-menu:hover &,
+  .page-header__button-menu:focus & {
+    fill: $accent-color;
+  }
+}
+.page-header__button-menu-close {
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.button-menu__icon-close {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  fill: $black-color-acc-logo;
+  transition: $transition-fill;
+  .page-header__button-menu-close:hover &,
+  .page-header__button-menu-close:focus & {
+    fill: $accent-color;
+  }
+}
