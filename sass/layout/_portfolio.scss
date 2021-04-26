@@ -67,7 +67,15 @@
   }
 }
 .filter-cards__foto {
-  margin: auto;
+  //   margin: auto;
+  width: auto;
+  height: 100%;
+
+  //  костыль
+  //   @media screen and (min-width: 768px) {
+  //     width: 354;
+  //     height: 294px;
+  //   }
 }
 
 .filter-box__title {
