@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>portfolio</title>
+    <title>WebStudio</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
@@ -15,31 +15,71 @@
 </head>
 
 <body class="page">
-    <header class="page-header page-header--border">
+    <header class="page-header page-header--size">
         <div class="container">
             <nav class="page-header__nav">
                 <a href="./index.html" class="logo page-header__logo--size list"><span
                         class="logo__text">Web</span>Studio</a>
-                <ul class="site-nav list">
-                    <li class="site-nav__item"><a href="./index.html" class="site-nav__link list">Студия</a></li>
-                    <li class="site-nav__item"><a href="./portfolio.html"
-                            class="site-nav__link site-nav__link--current list">Портфолио</a></li>
-                    <li class="site-nav__item"><a href="#contacts" class="site-nav__link list">Контакты</a></li>
-                </ul>
+                <button type="button" class="page-header__button-menu list" aria-expanded="false" data-menu-open>
+                    <svg class="button-menu__icon-open" width="24" height="16">
+                        <use href="./images/icons.svg#menu_24px"></use>
+                    </svg>
+                </button>
+                <div class="menu-container is-close" data-menu>
+                    <div class="page-header__menu">
+                        <button type="button" class="page-header__button-menu-close list" data-menu-close>
+                            <svg class="button-menu__icon-close" width="18.67" height="18.67">
+                                <use href="./images/icons.svg#close_24px"></use>
+                            </svg>
+                        </button>
+                        <ul class="site-nav list">
+                            <li class="site-nav__item"><a href="./index.html"
+                                    class="site-nav__link list">Студия</a></li>
+                            <li class="site-nav__item"><a href="./portfolio.html"
+                                    class="site-nav__link site-nav__link--current list">Портфолио</a>
+                            </li>
+                            <li class="site-nav__item"><a href="#contacts" class="site-nav__link list">Контакты</a></li>
+                        </ul>
+
+
+                        <ul class="auth-nav list">
+                            <li class="auth-nav__item"><a href="tel:+380961111111" aria-label="Телефон"
+                                    class="auth-nav__link list">
+                                    <svg class="auth-nav__icon" width="10" height="14">
+                                        <use href="./images/icons.svg#smartphone"></use>
+                                    </svg>+38 096 111 11 11</a></li>
+
+                            <li class="auth-nav__item"><a href="mailto:info@devstudio.com" aria-label="Почта"
+                                    class="auth-nav__link list">
+                                    <svg class="auth-nav__icon" width="14" height="10">
+                                        <use href="./images/icons.svg#envelope"></use>
+                                    </svg>info@devstudio.com
+                                </a>
+                            </li>
+
+                        </ul>
+                        <ul class="menu-list list">
+                            <li class="menu-list__item">
+                                <a href="" class="menu-list__link list" aria-label="Инстаграмм" target="_blank"
+                                    rel="noopener noreferrer">Instagram</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="" class="menu-list__link list" aria-label="Твиттер" target="_blank"
+                                    rel="noopener noreferrer">Twitter</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="" class="menu-list__link list" aria-label="Фейсбук" target="_blank"
+                                    rel="noopener noreferrer">Facebook</a>
+                            </li>
+                            <li class="menu-list__item">
+                                <a href="" class="menu-list__link list" aria-label="Линкедин" target="_blank"
+                                    rel="noopener noreferrer">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-            <ul class="auth-nav list">
-                <li class="auth-nav__item"><a href="mailto:info@devstudio.com" aria-label="Почта"
-                        class="auth-nav__link list">
-                        <svg class="auth-nav__icon" width="14" height="10">
-                            <use href="./images/icons.svg#envelope"></use>
-                        </svg>info@devstudio.com
-                    </a>
-                </li>
-                <li class="auth-nav__item"><a href="tel:+380961111111" aria-label="Телефон" class="auth-nav__link list">
-                        <svg class="auth-nav__icon" width="10" height="14">
-                            <use href="./images/icons.svg#smartphone"></use>
-                        </svg>+38 096 111 11 11</a></li>
-            </ul>
+
         </div>
     </header>
     <main>
@@ -282,6 +322,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
