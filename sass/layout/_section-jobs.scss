@@ -2,7 +2,8 @@
   display: none;
   padding-top: 0;
   @media screen and (min-width: 1200px) {
-    display: contents;
+    display: block;
+    padding-bottom: 94px;
 
     .section-jobs__list {
       display: flex;

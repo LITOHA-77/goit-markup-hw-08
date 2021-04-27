@@ -93,13 +93,15 @@ img {
 
 .section__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   margin-bottom: 30px;
 }
 @media screen and (min-width: 1200px) {
   .section__title {
+    font-size: 36px;
+    line-height: 1.16;
     margin-bottom: 50px;
   }
 }
@@ -109,9 +111,15 @@ img {
   color: #000000;
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__text {
@@ -894,6 +902,11 @@ img {
   text-align: center;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .description__title {
+    text-align: start;
+  }
+}
 
 .description__text {
   color: #757575;
@@ -906,7 +919,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .section-jobs {
-    display: contents;
+    display: block;
+    padding-bottom: 94px;
   }
   .section-jobs .section-jobs__list {
     display: flex;
