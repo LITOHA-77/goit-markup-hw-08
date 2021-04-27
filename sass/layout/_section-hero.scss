@@ -19,16 +19,28 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, $hero-overlay, $hero-overlay),
+      url(../images/hero.mobile@2x.jpg);
+  }
   @media screen and (min-width: 768px) {
     max-width: 768px;
     background-image: linear-gradient(to right, $hero-overlay, $hero-overlay),
       url(../images/hero.tablet.jpg);
+    @media screen and (min-width: 768px) {
+      background-image: linear-gradient(to right, $hero-overlay, $hero-overlay),
+        url(../images/hero.tablet@2x.jpg);
+    }
   }
   @media screen and (min-width: 1200px) {
     height: 600px;
     max-width: 1600px;
     background-image: linear-gradient(to right, $hero-overlay, $hero-overlay),
       url(../images/hero.desktop.jpg);
+    @media screen and (min-width: 1200px) {
+      background-image: linear-gradient(to right, $hero-overlay, $hero-overlay),
+        url(../images/hero.desktop@2x.jpg);
+    }
   }
 }
 
