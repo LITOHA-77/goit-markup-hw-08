@@ -58,6 +58,7 @@ img {
 }
 
 .container {
+  width: 100%;
   min-width: 320px;
   padding-right: 15px;
   padding-left: 15px;
@@ -589,6 +590,7 @@ img {
 .menu-list {
   position: absolute;
   display: flex;
+  flex-wrap: wrap;
   bottom: 48px;
   left: 25px;
   font-weight: 500;
@@ -609,6 +611,14 @@ img {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
+@media screen and (max-width: 383px) {
+  .menu-list__item:last-child {
+    margin-top: 5px;
+  }
+  .menu-list__item:nth-child(n+3) {
+    border-right: none;
+  }
+}
 .hero {
   background-color: #c4c4c4;
   text-align: center;
@@ -1233,7 +1243,7 @@ img {
 
 .mail-box__feild {
   width: 100%;
-  min-width: 320px;
+  min-width: 290px;
   padding: 15px 16px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);

@@ -43,6 +43,7 @@
 .menu-list {
   position: absolute;
   display: flex;
+  flex-wrap: wrap;
   bottom: 48px;
   left: 25px;
   font-weight: 500;
@@ -59,5 +60,16 @@
     padding-right: 10px;
     margin-right: 10px;
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+@media screen and (max-width: 383px) {
+  .menu-list__item {
+    &:last-child {
+      margin-top: 5px;
+    }
+    &:nth-child(n + 3) {
+      border-right: none;
+    }
   }
 }
