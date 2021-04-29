@@ -43,16 +43,6 @@
     margin-left: #{$team-list-desktop-set-gap};
   }
 }
-.team__foto {
-  @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 376px;
-  }
-  @media screen and (min-width: 1200px) {
-    width: 270px;
-    height: 262px;
-  }
-}
 
 .team__card-box {
   padding: 30px 10px 24px 10px;
