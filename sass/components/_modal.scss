@@ -130,12 +130,15 @@
 .form-modal__checkbox-text--agreement {
   margin-left: 3px;
   font-size: 12px;
-  line-height: 1.16;
-  text-decoration-line: underline;
+  // line-height: 1.16;
+  line-height: 0.95;
+  // text-decoration: underline;
+  border-bottom: 1px solid currentColor;
   color: $accent-color;
   @media screen and (min-width: 1200px) {
     font-size: 14px;
-    line-height: 1.71;
+    // line-height: 1.71;
+    line-height: 0.95;
   }
 }
 .form-modal__checkbox-text {

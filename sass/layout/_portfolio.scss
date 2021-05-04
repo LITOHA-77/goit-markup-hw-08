@@ -63,9 +63,34 @@
     margin-left: #{$section-filter-link-desktop-gap};
   }
 }
+// .filter-cards__foto {
+//   width: 450px;
 
+//   @media screen and (min-width: 768px) {
+//     width: 354px;
+//   }
+//   @media screen and (min-width: 1200px) {
+//     width: 370px;
+//   }
+//   //   //   margin: auto;
+//   //   width: auto;
+//   //   // height: 100%;
+
+//   //   //  костыль
+//   //   //   @media screen and (min-width: 768px) {
+//   //   //     width: 354;
+//   //   //     height: 294px;
+//   //   //   }
+// }
 .filter-box {
   padding: 20px 24px;
+  // border: 1px solid $filter-box;
+  // border-top: none;
+  // &--size {
+  //   @media screen and (max-width: 1190px) {
+  //     padding-bottom: 56px;
+  //   }
+  // }
 }
 .filter-box__title {
   color: $text-title-color;

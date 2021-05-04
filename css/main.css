@@ -847,15 +847,14 @@ img {
 .form-modal__checkbox-text--agreement {
   margin-left: 3px;
   font-size: 12px;
-  line-height: 1.16;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  line-height: 0.95;
+  border-bottom: 1px solid currentColor;
   color: #2196f3;
 }
 @media screen and (min-width: 1200px) {
   .form-modal__checkbox-text--agreement {
     font-size: 14px;
-    line-height: 1.71;
+    line-height: 0.95;
   }
 }
 
