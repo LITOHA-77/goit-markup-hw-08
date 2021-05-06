@@ -739,7 +739,8 @@ img {
   position: absolute;
   top: 40px;
   left: 40px;
-  width: 370px;
+  right: 40px;
+  max-width: 370px;
 }
 @media screen and (min-width: 1200px) {
   .form-modal {
