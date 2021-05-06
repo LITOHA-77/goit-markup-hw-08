@@ -40,8 +40,8 @@
 }
 
 .filter-cards__item {
-  display: flex;
-  border: 1px solid $filter-box;
+  // display: flex;
+  // border: 1px solid $filter-box;
   &:not(:last-child) {
     @media screen and (max-width: 767px) {
       margin-bottom: 30px;
@@ -84,8 +84,9 @@
 // }
 .filter-box {
   padding: 20px 24px;
-  // border: 1px solid $filter-box;
-  // border-top: none;
+  flex-grow: 1;
+  border: 1px solid $filter-box;
+  border-top: none;
   // &--size {
   //   @media screen and (max-width: 1190px) {
   //     padding-bottom: 56px;
@@ -113,7 +114,11 @@
 }
 
 .filter-cards__link {
-  display: block;
+  // display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: stretch;
   transition: $transition-shadow;
   &:hover,
   &:focus {

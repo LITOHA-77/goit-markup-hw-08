@@ -1305,10 +1305,6 @@ img {
   }
 }
 
-.filter-cards__item {
-  display: flex;
-  border: 1px solid #eeeeee;
-}
 @media screen and (max-width: 767px) {
   .filter-cards__item:not(:last-child) {
     margin-bottom: 30px;
@@ -1330,6 +1326,9 @@ img {
 
 .filter-box {
   padding: 20px 24px;
+  flex-grow: 1;
+  border: 1px solid #eeeeee;
+  border-top: none;
 }
 
 .filter-box__title {
@@ -1353,7 +1352,10 @@ img {
 }
 
 .filter-cards__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: stretch;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-cards__link:hover, .filter-cards__link:focus {
