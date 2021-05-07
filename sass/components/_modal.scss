@@ -11,6 +11,7 @@
   height: 100%;
   background-color: $backdrop-bgc;
   opacity: 1;
+  overflow-y: scroll;
   visibility: visible;
   transition: $transition-opacity-visibility;
   z-index: 1;
@@ -30,6 +31,9 @@
     max-width: 528px;
     height: 581px;
   }
+}
+body.modal-open {
+  overflow: hidden;
 }
 .form-modal {
   position: absolute;
